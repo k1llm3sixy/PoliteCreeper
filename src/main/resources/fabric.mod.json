@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "politecreeper",
+  "version": "${version}",
+  "name": "PoliteCreeper",
+  "description": "A creeper asking for permission to explode",
+  "authors": [
+    "k1llm3sixy",
+    "n3vvx"
+  ],
+  "contact": {
+    "email": "k1llm3sixy@gmail.com",
+    "sources": "https://github.com/k1llm3sixy/PoliteCreeper",
+    "issues": "https://github.com/k1llm3sixy/PoliteCreeper/issues"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/politecreeper/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.k1llm3sixy.politecreeper.PoliteCreeper"
+    ]
+  },
+  "mixins": [
+    "politecreeper.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "fabric-language-kotlin": "*",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

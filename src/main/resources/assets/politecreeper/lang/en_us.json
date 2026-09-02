@@ -1,0 +1,12 @@
+{
+  "politecreeper.allow": "Allow",
+  "politecreeper.deny": "Deny",
+  "politecreeper.random": "I'm Feeling lucky!",
+  "politecreeper.title": "Hi! Can I explode?",
+  "politecreeper.allow_tooltip": "§aAllow creeper to explode",
+  "politecreeper.deny_tooltip": "§cCancel the explosion and remove the creeper",
+  "politecreeper.random_tooltip": "§6Leave it up to chance",
+  "politecreeper.sorry": "§8[§aCreeper§8] §cSorry...",
+  "politecreeper.book_text": "Here lived a creeper who chose politeness over detonation",
+  "politecreeper.book_author": "Creeper"
+}

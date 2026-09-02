@@ -1,0 +1,43 @@
+name: Сборка
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: чекаут
+        uses: actions/checkout@v4
+
+      - name: джава
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '25'
+
+      - name: кеширование
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: чтоб исполнялся
+        run: chmod +x gradlew
+
+      - name: сборочка
+        run: ./gradlew clean build
+
+      - name: сохранение артефакта
+        uses: actions/upload-artifact@v4
+        with:
+          name: politecreeper
+          path: build/libs/*.jar

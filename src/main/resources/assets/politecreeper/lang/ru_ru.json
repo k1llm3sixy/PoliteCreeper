@@ -1,0 +1,12 @@
+{
+  "politecreeper.allow": "Разрешить",
+  "politecreeper.deny": "Отказать",
+  "politecreeper.random": "Мне повезет!",
+  "politecreeper.title": "Привет! Можно мне взорваться?",
+  "politecreeper.allow_tooltip": "§aРазрешить криперу взорваться",
+  "politecreeper.deny_tooltip": "§cОтменить взрыв и удалить крипера",
+  "politecreeper.random_tooltip": "§6Довериться воле случая",
+  "politecreeper.sorry": "§8[§aКрипер§8] §cПрости...",
+  "politecreeper.book_text": "Здесь жил крипер который предпочел вежливость детонации",
+  "politecreeper.book_author": "Крипер"
+}
